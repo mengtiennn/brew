@@ -2,31 +2,37 @@
 import { ref, onMounted, watch, computed, reactive } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
-const routerData = reactive([
-  { linkName: '关于ＷＡＧ', link: '/' },
-  { linkName: '服务项目', link: '/service' },
-  { linkName: '成功案例', link: '/example' },
-  { linkName: '营销博客', link: '/blog' },
-  { linkName: '招聘资讯', link: '/info' },
-  { linkName: '联系我们', link: '/contact' }
-])
+const optionList = ref(['HOME', 'ABOUT', 'MENU', 'GALLERY', 'CONTACT US'])
 const showHamburger = ref(false)
+const scrollTo = (id) => {
+  if(menuShow.value){
+    menuShow.value = false
+  }
+  console.log(id)
+  const element = document.getElementById(id)
+  console.log(element)
+  if(element){
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - 120;
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  }
+}
 </script>
 <template>
-  <div class="flex bg-black pt-[22px] pl-[90px] pr-[90px] pb-[22px] justify-center items-center laptop:justify-center tablet:justify-center laptop:pt-[10px] laptop:pb-[10px] tablet:pt-[10px] tablet:pb-[10px] fixed top-0 left-0 z-50 w-full">
+  <div class="flex bg-white pt-[22px] pl-[90px] pr-[90px] pb-[22px] justify-center items-center laptop:justify-center tablet:justify-center laptop:pt-[10px] laptop:pb-[10px] tablet:pt-[10px] tablet:pb-[10px] fixed top-0 left-0 z-50 w-full">
     <div class="flex justify-between items-center w-full desktop:max-w-[1000px] tablet:justify-center">
       <div class="flex items-center gap-[8rem]">
         <div class="flex items-end cursor-pointer" @click="router.push('/')">
-          <img class="w-[81px] h-[34px]" src="@/assets/img/logo2.svg" alt="logo">
-          <span class="ml-2 font-[600] text-[15px] text-white">流量专家</span>
+          <img class="w-[127px] h-[75px]" src="@/assets/img/logo.png" alt="logo">
         </div>
-        <div class="flex gap-[32px] text-white laptop:hidden tablet:hidden text-[15px]">
-          <NuxtLink v-for="(link, idx) in routerData" :key="idx + 'router'" :to="link.link">{{ link.linkName }}</NuxtLink>
+        <div class="flex gap-[32px] text-black laptop:hidden tablet:hidden text-[15px]">
+          <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(item)" class="cursor-pointer">{{ link }}</div>
         </div>
       </div>
-      <div class="w-[95px] h-[37px] px border-white border-[1px] border-solid bg-white flex items-center justify-center text-white font-normal laptop:hidden tablet:hidden">
-        <span class="text-black text-[15px] font-[400] w-[61px]">免费咨询</span>
-      </div>
+      <div class="text-white bg-[#4B3426] font-[500] px-[18px] py-[12px] rounded-full underline">ORDER ONLINE</div>
     </div>
     <img src="@/assets/img/menu.svg" class="absolute top-[16px] right-4 cursor-pointer desktop:hidden mac:hidden tablet:hidden" @click="showHamburger = true">
     <img src="@/assets/img/menuWhite.svg" class="absolute top-[16px] right-4 cursor-pointer desktop:hidden mac:hidden" @click="showHamburger = true">
