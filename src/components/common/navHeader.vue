@@ -32,7 +32,7 @@ const goUrl = (url?: string) => {
 </script>
 <template>
   <div class="flex bg-white pt-[22px] pl-[90px] pr-[90px] pb-[22px] justify-center items-center laptop:justify-center tablet:justify-center laptop:pt-[10px] laptop:pb-[10px] tablet:pt-[10px] tablet:pb-[10px] fixed top-0 left-0 z-50 w-full">
-    <div class="flex justify-between items-center w-full desktop:max-w-[1000px] tablet:justify-center">
+    <div class="flex justify-center items-center w-full desktop:max-w-[1000px] gap-[8rem]">
       <div class="flex items-center gap-[8rem]">
         <div class="flex items-end cursor-pointer" @click="router.push('/')">
           <img class="w-[127px] h-[75px]" src="@/assets/img/logo.png" alt="logo">

@@ -4,14 +4,14 @@
       <img class="w-full h-full object-cover" src="@/assets/img/banner.png" alt="">
       <div
         class="w-full absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
-        <div class="text-[11px] font-[400] desktop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH COFFEE.</div>
+        <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH COFFEE.</div>
         <div class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem]">Brew
           Memories in Park Slope! </div>
         <div class="flex flex-col tablet:text-center">
           <div class="text-[1.5rem] font-[400] tablet:text-[14px]">Unforgettable Bubble Tea</div>
           <div class="text-[1.5rem] font-[400] tablet:text-[14px]">and Coffee in Brooklyn.</div>
         </div>
-        <div class="desktop:hidden w-[1px] h-[5rem] bg-white my-[1.2rem]" />
+        <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[5rem] bg-white my-[1.2rem]" />
         <div
           class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max h-[48px] rounded-full cursor-pointer mt-[1rem] underline"
           @click="goUrl()">
