@@ -2,15 +2,19 @@
   <div class="desktop:pt-[119px] tablet:pt-[95px]">
     <div id="HOME" class="h-[710px] tablet:h-[516px] relative">
       <img class="w-full h-full object-cover" src="@/assets/img/banner.png" alt="">
-      <div class="w-full absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
+      <div
+        class="w-full absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
         <div class="text-[11px] font-[400] desktop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH COFFEE.</div>
-        <div class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem]">Brew Memories in Park Slope! </div>
+        <div class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem]">Brew
+          Memories in Park Slope! </div>
         <div class="flex flex-col tablet:text-center">
           <div class="text-[1.5rem] font-[400] tablet:text-[14px]">Unforgettable Bubble Tea</div>
           <div class="text-[1.5rem] font-[400] tablet:text-[14px]">and Coffee in Brooklyn.</div>
         </div>
         <div class="desktop:hidden w-[1px] h-[5rem] bg-white my-[1.2rem]" />
-        <div class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max h-[48px] rounded-full cursor-pointer mt-[1rem] underline" @click="goUrl()">
+        <div
+          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max h-[48px] rounded-full cursor-pointer mt-[1rem] underline"
+          @click="goUrl()">
           ORDER NOW
         </div>
       </div>
@@ -20,7 +24,9 @@
         <div class="w-[405px]">
           <div class="text-[2rem] font-[700] mb-[1rem]">WE ARE BREW<br> MEMORIES!</div>
           <div class="font-[400] mb-[71px] w-[405px]">
-            Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s beloved borough. 
+            Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a
+            world of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s
+            beloved borough.
           </div>
           <img class="w-[405px] h-[280px] mb-[75px]" src="@/assets/img/about1.png" alt="">
           <div class="text-[1.5rem] font-[700]">Freshly Made</div>
@@ -31,7 +37,9 @@
         <div class="w-[405px]">
           <img class="w-[405px] h-[280px]" src="@/assets/img/about2.png" alt="">
           <div class="my-[84px] w-[405px]">
-            We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and desserts, up hold the same standard of excellence!
+            We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our
+            coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and
+            desserts, up hold the same standard of excellence!
           </div>
           <img class="w-[405px] h-[280px]" src="@/assets/img/about3.png" alt="">
         </div>
@@ -39,11 +47,15 @@
       <div class="desktop:hidden flex flex-col justify-center items-center">
         <div class="text-[21px] font-[700] mb-[14px]">WE ARE BREW MEMORIES!</div>
         <div class="text-[14px] font-[400] leading-[20px] mb-[2rem]">
-          Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s beloved borough. 
+          Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world
+          of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s beloved
+          borough.
         </div>
         <img class="mb-[3.5rem]" src="@/assets/img/about2.png" alt="">
         <div class="mb-[2.5rem]">
-          We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and desserts, up hold the same standard of excellence!
+          We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our
+          coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and
+          desserts, up hold the same standard of excellence!
         </div>
         <img class="mb-[3.5rem]" src="@/assets/img/about1.png" alt="">
         <div class="flex flex-col justify-center items-center mb-[3rem]">
@@ -56,7 +68,8 @@
     <div id="MENU" class="flex flex-col justify-center items-center bg-[#4B3426] py-[100px] relative">
       <div class="flex flex-col justify-center items-center">
         <div class="font-[300] text-white tablet:text-14px">our delicious offer</div>
-        <div class="text-[1.5rem] text-white tablet:text-center tablet:mx-[10%]">Unique food and charming spot in Brooklyn!</div>
+        <div class="text-[1.5rem] text-white tablet:text-center tablet:mx-[10%]">Unique food and charming spot in
+          Brooklyn!</div>
       </div>
       <div class="flex justify-center gap-[10%] w-full my-[2rem]">
         <div class="flex flex-col items-center justify-center w-[250px] tablet:hidden">
@@ -89,11 +102,30 @@
         <img class="mb-[20%]" src="@/assets/img/menuP2.png" alt="">
       </div>
     </div>
+    <!-- 六張圖區 -->
+    <div class="w-full px-[61px] bg-white flex flex-wrap py-[157px] gap-x-[60px] gap-y-[28px] justify-center">
+      <img v-for="p in 6" :src="getAssetsImgFile('m', `m${p}.png`)" alt="" class="object-cover w-1/4 h-1/2">
+    </div>
+    <div class="flex gap-[113px] justify-center pb-[203px] pt-[60px]">
+      <div class="flex flex-col gap-[72px]">
+        <img class="w-[424px]" src="@/assets/img/c/c1.png" alt="coffee info">
+        <span class="text-[32px] w-[466px]">Fresh coffee beans are used daily to provide a delicious cup of
+          coffee.</span>
+        <img class="w-[424px]" src="@/assets/img/c/c2.png" alt="coffee info">
+      </div>
+      <div class="flex flex-col gap-[72px] mt-[111px]">
+        <span class="text-[32px] w-[466px]">A professional barista crafts a delicious cup of coffee just for you.</span>
+        <img class="w-[424px]" src="@/assets/img/c/c3.png" alt="coffee info">
+        <span class="text-[32px] w-[466px]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
+      </div>
+    </div>
+    <img src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain">
   </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
+import { getAssetsImgFile } from '../utils/commonUse'
 const menu1List = ref<string[]>(['COFFEE', 'SPECIALTY LATTE', 'FRIZZY SPARKLING & SLUSH', 'FRESH FRUIT  TEA'])
 const menu2List = ref<string[]>(['SPECIAL SMOOTHIE', 'LEMONADE', 'FOOD'])
 const orderUrl = ref<string>('https://order.mealkeyway.com/customer/release/index?mid=45774946684268454942534476706e424837583342773d3d#/main')
