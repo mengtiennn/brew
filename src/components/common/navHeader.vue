@@ -1,24 +1,33 @@
-<script setup>
+<script setup lang="ts">
 import { ref, onMounted, watch, computed, reactive } from 'vue'
 import { useRouter } from 'vue-router'
 const router = useRouter()
 const optionList = ref(['HOME', 'ABOUT', 'MENU', 'GALLERY', 'CONTACT US'])
 const showHamburger = ref(false)
-const scrollTo = (id) => {
+const menuShow = ref<boolean>(false)
+const scrollTo = (id:string) => {
   if(menuShow.value){
     menuShow.value = false
   }
-  console.log(id)
   const element = document.getElementById(id)
+  showHamburger.value = false
   console.log(element)
   if(element){
     const elementPosition = element.getBoundingClientRect().top;
-    const offsetPosition = elementPosition + window.pageYOffset - 120;
+    const offsetPosition = elementPosition + window.pageYOffset - 95;
     window.scrollTo({
       top: offsetPosition,
       behavior: 'smooth'
     });
   }
+}
+const orderUrl = ref<string>('https://order.mealkeyway.com/customer/release/index?mid=45774946684268454942534476706e424837583342773d3d#/main')
+
+const goUrl = (url?: string) => {
+  if(!url){
+    url = orderUrl.value
+  }
+  window.open(url, '_blank');
 }
 </script>
 <template>
@@ -29,22 +38,19 @@ const scrollTo = (id) => {
           <img class="w-[127px] h-[75px]" src="@/assets/img/logo.png" alt="logo">
         </div>
         <div class="flex gap-[32px] text-black laptop:hidden tablet:hidden text-[15px]">
-          <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(item)" class="cursor-pointer">{{ link }}</div>
+          <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(link)" class="cursor-pointer">{{ link }}</div>
         </div>
       </div>
-      <div class="text-white bg-[#4B3426] font-[500] px-[18px] py-[12px] rounded-full underline">ORDER ONLINE</div>
+      <div class="tablet:hidden text-white bg-[#4B3426] font-[500] px-[18px] py-[12px] rounded-full underline cursor-pointer" @click="goUrl()">ORDER ONLINE</div>
     </div>
     <img src="@/assets/img/menu.svg" class="absolute top-[16px] right-4 cursor-pointer desktop:hidden mac:hidden tablet:hidden" @click="showHamburger = true">
-    <img src="@/assets/img/menuWhite.svg" class="absolute top-[16px] right-4 cursor-pointer desktop:hidden mac:hidden" @click="showHamburger = true">
+    <img src="@/assets/img/menuWhite.svg" class="absolute top-[32px] right-4 cursor-pointer desktop:hidden mac:hidden" @click="showHamburger = true">
   </div>
   <Transition name="slide-fade">
     <div class="w-full h-full fixed top-0 left-0 bg-white z-50 flex items-center pt-[75px] flex-col" v-if="showHamburger">
       <img src="@/assets/img/close.svg" class="fixed top-[16px] right-4 cursor-pointer desktop:hidden" @click="showHamburger = false">
       <div class="flex gap-[24px] text-text-black flex-col items-center">
-        <NuxtLink v-for="(link, idx) in routerData" :key="idx + 'router'" :to="link.link">{{ link.linkName }}</NuxtLink>
-      </div>
-      <div class="rounded-[40px] w-[111px] h-[41px] bg-main-yellow flex items-center justify-center text-white font-normal mt-[24px]">
-        <span>专业谘询</span>
+        <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(link)">{{ link }}</div>
       </div>
     </div>
   </Transition>
