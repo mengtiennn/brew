@@ -13,7 +13,7 @@
         </div>
         <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[5rem] bg-white my-[1.2rem]" />
         <div
-          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max h-[48px] rounded-full cursor-pointer mt-[1rem] underline"
+          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max rounded-full cursor-pointer mt-[1rem] underline"
           @click="goUrl()">
           ORDER NOW
         </div>

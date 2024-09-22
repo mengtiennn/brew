@@ -35,7 +35,7 @@ const goUrl = (url?: string) => {
     <div class="flex justify-center items-center w-full desktop:max-w-[1000px] gap-[8rem]">
       <div class="flex items-center gap-[8rem]">
         <div class="flex items-end cursor-pointer" @click="router.push('/')">
-          <img class="w-[127px] h-[75px]" src="@/assets/img/logo.png" alt="logo">
+          <img class="w-[127px] h-[75px] object-cover" src="@/assets/img/logo.png" alt="logo">
         </div>
         <div class="flex gap-[32px] text-black laptop:hidden tablet:hidden text-[15px]">
           <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(link)" class="cursor-pointer">{{ link }}</div>
