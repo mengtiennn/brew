@@ -16,8 +16,10 @@ const info = reactive([
 const emailContent = ref('')
 </script>
 <template>
-  <div class="bg-[#5F3E2B] w-full pt-[139px] pb-[81px] flex flex-col items-center gap-[121px]">
-    <div class="flex gap-[128px] justify-center items-center">
+  <div
+    class="bg-[#5F3E2B] w-full pt-[139px] pb-[81px] flex flex-col items-center gap-[121px] laptop:gap-[61px] tablet:gap-[61px]">
+    <div
+      class="flex gap-[128px] justify-center items-center laptop:flex-col tablet:flex-col laptop:gap-[40px] tablet:gap-[40px]">
       <div class="flex flex-col gap-[11px]">
         <img src="@/assets/img/logo.png" alt="logo" class="w-[224px]">
         <div class="text-center text-[18px] font-[300] text-white">295 7th Ave, Brooklyn, NY<br />11215</div>
@@ -36,6 +38,6 @@ const emailContent = ref('')
         </div>
       </div>
     </div>
-    <span class="text-[15px] font-[300] text-white">@2024 Brew Memories. All Rights Reserved. x WAG Marketing</span>
+    <span class="text-[15px] font-[300] text-white laptop:text-center tablet:text-center">@2024 Brew Memories. All Rights Reserved. x WAG Marketing</span>
   </div>
 </template>

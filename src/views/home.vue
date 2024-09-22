@@ -103,10 +103,13 @@
       </div>
     </div>
     <!-- 六張圖區 -->
-    <div class="w-full px-[61px] bg-white flex flex-wrap py-[157px] gap-x-[60px] gap-y-[28px] justify-center">
-      <img v-for="p in 6" :src="getAssetsImgFile('m', `m${p}.png`)" alt="" class="object-cover w-1/4 h-1/2">
+    <div
+      class="w-full px-[61px] bg-white flex flex-wrap py-[157px] gap-x-[60px] gap-y-[28px] justify-center laptop:flex-nowrap laptop:flex-col tablet:flex-col tablet:flex-nowrap laptop:px-[48px] laptop:py-[36px] laptop:gap-x-0 laptop:gap-y-[26px] tablet:px-[48px] tablet:py-[36px] tablet:gap-x-0 tablet:gap-y-[26px]">
+      <img v-for="p in 6" :src="getAssetsImgFile('m', `m${p}.png`)" alt=""
+        class="object-cover w-1/4 h-1/2 laptop:w-full tablet:w-full">
     </div>
-    <div class="flex gap-[113px] justify-center pb-[203px] pt-[60px]">
+    <!-- 介紹 桌電板 -->
+    <div class="flex gap-[113px] justify-center pb-[203px] pt-[60px] laptop:hidden tablet:hidden">
       <div class="flex flex-col gap-[72px]">
         <img class="w-[424px]" src="@/assets/img/c/c1.png" alt="coffee info">
         <span class="text-[32px] w-[466px]">Fresh coffee beans are used daily to provide a delicious cup of
@@ -119,7 +122,28 @@
         <span class="text-[32px] w-[466px]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
       </div>
     </div>
-    <img src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain">
+    <!-- 介紹 手機板 -->
+    <div
+      class="flex flex-col gap-[46px] justify-center items-center px-[42px] pb-[174px] pt-[60px] desktop:hidden mac:hidden">
+      <span class="text-[24px] w-full text-center !font-[400]">A professional barista crafts a delicious cup of coffee
+        just for
+        you.</span>
+      <img class="w-full" src="@/assets/img/c/c1.png" alt="coffee info">
+      <span class="text-[24px] w-full text-center !font-[400]">Fresh coffee beans are used daily to provide a delicious
+        cup of
+        coffee.</span>
+      <img class="w-full" src="@/assets/img/c/c2.png" alt="coffee info">
+      <span class="text-[24px] w-full text-center !font-[400]">A refreshing cup of bubble tea is the perfect thirst
+        quencher.</span>
+      <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
+    </div>
+    <!-- contact 桌電板 -->
+    <img src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain laptop:hidden tablet:hidden">
+    <!-- contact 手機版 -->
+    <div class="relative desktop:hidden mac:hidden">
+      <img src="@/assets/img/mo1.png" alt="contact" class="w-full object-contain">
+      <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
+    </div>
   </div>
 </template>
 
