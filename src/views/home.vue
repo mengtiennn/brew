@@ -145,11 +145,15 @@
       <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
     </div>
   </div>
+  <div class="w-[53px] h-[53px] bg-[#D9D9D9] rounded-full fixed bottom-[24px] right-[20px] flex justify-center items-center">
+    <img src="@/assets/icon/arrow.svg" alt="arrow" class="w-[40px] rotate-90" @click="goToTop()">
+  </div>
 </template>
 
 <script setup lang="ts">
 import { ref } from 'vue'
 import { getAssetsImgFile } from '../utils/commonUse'
+const content = ref(null)
 const menu1List = ref<string[]>(['COFFEE', 'SPECIALTY LATTE', 'FRIZZY SPARKLING & SLUSH', 'FRESH FRUIT  TEA'])
 const menu2List = ref<string[]>(['SPECIAL SMOOTHIE', 'LEMONADE', 'FOOD'])
 const orderUrl = ref<string>('https://order.mealkeyway.com/customer/release/index?mid=45774946684268454942534476706e424837583342773d3d#/main')
@@ -159,6 +163,13 @@ const goUrl = (url?: string) => {
     url = orderUrl.value
   }
   window.open(url, '_blank');
+}
+
+const goToTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth"
+  })
 }
 </script>
 
