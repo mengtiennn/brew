@@ -19,7 +19,7 @@
         </div>
       </div>
     </div>
-    <div id="ABOUT" class="px-[12%] flex pt-[139px] pb-[239px] justify-evenly tablet:pt-[72px]">
+    <div id="ABOUT" class="px-[10%] flex pt-[139px] pb-[239px] justify-evenly tablet:pt-[72px]">
       <div class="w-[50%] flex flex-col items-center tablet:hidden">
         <div class="w-[405px]">
           <div class="text-[2rem] font-[700] mb-[1rem]">WE ARE BREW<br> MEMORIES!</div>
@@ -44,7 +44,7 @@
           <img class="w-[405px] h-[280px]" src="@/assets/img/about3.png" alt="">
         </div>
       </div>
-      <div class="desktop:hidden flex flex-col justify-center items-center">
+      <div class="desktop:hidden mac:hidden laptop:hidden flex flex-col justify-center items-center">
         <div class="text-[21px] font-[700] mb-[14px]">WE ARE BREW MEMORIES!</div>
         <div class="text-[14px] font-[400] leading-[20px] mb-[2rem]">
           Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world
@@ -84,7 +84,7 @@
             <div v-if="index !== menu2List.length - 1" class="w-full border-t border-dashed border-white" />
           </div>
         </div>
-        <div class="desktop:hidden">
+        <div class="desktop:hidden laptop:hidden mac:hidden">
           <div v-for="(item, index) in menu1List" :key="index" class="w-full text-center">
             <div class="text-white py-[2rem]">{{ item }}</div>
             <div class="w-full border-t border-dashed border-white" />
@@ -97,13 +97,13 @@
       </div>
       <div class="bg-white py-[12px] px-[24px] rounded-full cursor-pointer" @click="goUrl()">Order Online</div>
       <img class="w-[450px] h-[320px] absolute top-[-25%] left-[20%] tablet:hidden" src="@/assets/img/menu.png" alt="">
-      <div class="desktop:hidden absolute top-[-13%] left-0 flex">
+      <div class="desktop:hidden laptop:hidden mac:hidden absolute top-[-13%] left-0 flex">
         <img src="@/assets/img/menuP1.png" alt="">
         <img class="mb-[20%]" src="@/assets/img/menuP2.png" alt="">
       </div>
     </div>
     <!-- 六張圖區 -->
-    <div
+    <div id="GALLERY"
       class="w-full px-[61px] bg-white flex flex-wrap py-[157px] gap-x-[60px] gap-y-[28px] justify-center laptop:flex-nowrap laptop:flex-col tablet:flex-col tablet:flex-nowrap laptop:px-[48px] laptop:py-[36px] laptop:gap-x-0 laptop:gap-y-[26px] tablet:px-[48px] tablet:py-[36px] tablet:gap-x-0 tablet:gap-y-[26px]">
       <img v-for="p in 6" :src="getAssetsImgFile('m', `m${p}.png`)" alt=""
         class="object-cover w-1/4 h-1/2 laptop:w-full tablet:w-full">
@@ -137,12 +137,14 @@
         quencher.</span>
       <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
     </div>
-    <!-- contact 桌電板 -->
-    <img src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain laptop:hidden tablet:hidden">
-    <!-- contact 手機版 -->
-    <div class="relative desktop:hidden mac:hidden">
-      <img src="@/assets/img/mo1.png" alt="contact" class="w-full object-contain">
-      <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
+    <div id="CONTACT US">
+      <!-- contact 桌電板 -->
+      <img id="CONTACT US" src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain laptop:hidden tablet:hidden">
+      <!-- contact 手機版 -->
+      <div class="relative desktop:hidden mac:hidden">
+        <img src="@/assets/img/mo1.png" alt="contact" class="w-full object-contain">
+        <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
+      </div>
     </div>
   </div>
   <div class="w-[53px] h-[53px] bg-[#D9D9D9] rounded-full fixed bottom-[24px] right-[20px] flex justify-center items-center">
