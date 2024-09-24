@@ -21,7 +21,7 @@ const scrollTo = (id:string) => {
     });
   }
 }
-const orderUrl = ref<string>('https://order.mealkeyway.com/customer/release/index?mid=45774946684268454942534476706e424837583342773d3d#/main')
+const orderUrl = ref<string>('https://www.brewmemoriesbk.com/#most-popular')
 
 const goUrl = (url?: string) => {
   if(!url){

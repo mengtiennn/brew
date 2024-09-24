@@ -107,7 +107,7 @@
         </div>
       </div>
       <div class="bg-white py-[12px] px-[24px] rounded-full cursor-pointer"
-        @click="goUrl('https://www.brewmemoriesbk.com/?owg-fulfillment=pickup&location=11eb2bc2ec210b108648ac1f6bbbd01e&rwg_token=AJKvS9WDU7_3g7t7JDaxeVlPYROz4YtufvuVAYYGMiTvqA1drmZ-iyr9mNoCs4jK8j2DWTLpNn9k0US4aRc4OlWNnoDbuFssKQ%3D%3D#most-popular')">
+        @click="goUrl('https://www.brewmemoriesbk.com/#most-popular')">
         Order Online</div>
       <img class="w-[450px] h-[320px] absolute top-[-25%] left-[12%] tablet:hidden object-contain" src="@/assets/img/menu.png" alt="">
       <div class="desktop:hidden laptop:hidden mac:hidden absolute top-[-6%] left-[5%] flex">
@@ -235,7 +235,7 @@ import { getAssetsImgFile } from '../utils/commonUse'
 const content = ref(null)
 const menu1List = ref<string[]>(['COFFEE', 'SPECIALTY LATTE', 'FRIZZY SPARKLING & SLUSH', 'FRESH FRUIT  TEA'])
 const menu2List = ref<string[]>(['SPECIAL SMOOTHIE', 'LEMONADE', 'FOOD'])
-const orderUrl = ref<string>('https://order.mealkeyway.com/customer/release/index?mid=45774946684268454942534476706e424837583342773d3d#/main')
+const orderUrl = ref<string>('https://www.brewmemoriesbk.com/#most-popular')
 
 const goUrl = (url?: string) => {
   if(!url){
