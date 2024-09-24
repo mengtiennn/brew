@@ -154,33 +154,72 @@
       <!-- contact 桌電板 -->
       <div class="laptop:hidden tablet:hidden relative" id="CONTACT US">
         <img src="@/assets/img/bb.png" alt="contact" class="w-full object-contain">
-        <div class="absolute right-0 top-[50%]">
-          <div class="flex gap-[20px] items-center">
+        <div class="absolute right-[256px] top-[50%] translate-y-[-50%] flex flex-col gap-[30px]">
+          <div class="flex gap-[20px] items-center translate-x-[-167px]">
             <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[50px]">
             <span class="text-[15px] text-white">347-987-3954</span>
           </div>
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
-            <span class="text-[15px] text-white">Online Order</span>
-          </div>
+          <a href="https://www.brewmemoriesonline.com/" target="_blank">
+            <div class="flex gap-[20px] items-center translate-x-[-80px]">
+              <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
+              <span class="text-[15px] text-white">Online Order</span>
+            </div>
+          </a>
           <div class="flex gap-[20px] items-center">
             <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[50px]">
             <span class="text-[15px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
           </div>
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[50px]">
-            <span class="text-[15px] text-white">Brew Memories</span>
-          </div>
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[50px]">
-            <span class="text-[15px] text-white">Brew_Memories</span>
-          </div>
+          <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
+            <div class="flex gap-[20px] items-center translate-x-[-80px]">
+              <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[50px]">
+              <span class="text-[15px] text-white">Brew Memories</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/brew_memories" target="_blank">
+            <div class="flex gap-[20px] items-center translate-x-[-167px]">
+              <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[50px]">
+              <span class="text-[15px] text-white">Brew_Memories</span>
+            </div>
+          </a>
         </div>
+        <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px] right-[60px]">
       </div>
       <!-- contact 手機版 -->
-      <div class="relative desktop:hidden mac:hidden">
+      <!-- <div class="relative desktop:hidden mac:hidden">
         <img src="@/assets/img/mo1.png" alt="contact" class="w-full object-contain">
         <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
+      </div> -->
+      <div class="relative desktop:hidden mac:hidden" id="CONTACT US">
+        <img src="@/assets/img/phone2.png" alt="contact" class="w-full object-contain">
+        <div class="flex flex-col gap-[30px] absolute bottom-[150px] left-[50%] translate-x-[-50%]">
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[37px]">
+            <span class="text-[14px] text-white">347-987-3954</span>
+          </div>
+          <a href="https://www.brewmemoriesonline.com/" target="_blank">
+            <div class="flex gap-[20px] items-center">
+              <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[37px]">
+              <span class="text-[14px] text-white">Online Order</span>
+            </div>
+          </a>
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[37px]">
+            <span class="text-[14px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
+          </div>
+          <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
+            <div class="flex gap-[20px] items-center">
+              <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[37px]">
+              <span class="text-[14px] text-white">Brew Memories</span>
+            </div>
+          </a>
+          <a href="https://www.instagram.com/brew_memories" target="_blank">
+            <div class="flex gap-[20px] items-center">
+              <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[37px]">
+              <span class="text-[14px] text-white">Brew_Memories</span>
+            </div>
+          </a>
+        </div>
+        <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px] right-[60px]">
       </div>
     </div>
   </div>
