@@ -1,10 +1,10 @@
 <template>
   <div class="desktop:pt-[119px] tablet:pt-[95px]">
-    <div id="HOME" class="h-[710px] tablet:h-[516px] relative">
-      <img class="w-full h-full object-cover" src="@/assets/img/banner.png" alt="">
+    <div id="HOME" class="h-[710px] tablet:h-[551px] relative">
+      <img class="w-full h-full object-contain desktop:!object-cover tablet:!object-cover" src="@/assets/img/banner.png" alt="">
       <div
-        class="w-fit absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
-        <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH
+        class="w-fit absolute text-white left-[10%] top-[35%] flex flex-col tablet:items-center tablet:left-0 tablet:top-[20%] ">
+        <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[0.5rem]">COZY PLACE. FRESH
           COFFEE.</div>
         <div
           class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem] w-fit">
@@ -14,13 +14,13 @@
           <div class="text-[1.5rem] font-[400] tablet:text-[14px] w-fit">Unforgettable Bubble Tea</div>
           <div class="text-[1.5rem] font-[400] tablet:text-[14px] w-fit">and Coffee in Brooklyn.</div>
         </div>
-        <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[67px] bg-white my-[1.2rem]" />
+        <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[67px] bg-white my-[1rem]" />
         <div
-          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max rounded-full cursor-pointer mt-[1rem] underline mobile:py-[8px]"
+          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max rounded-full cursor-pointer mt-[1rem] mobile:py-[8px]"
           @click="goUrl()">
           Order Pickup
         </div>
-        <div class="flex gap-[4px]">
+        <div class="flex gap-[4px] mt-2">
           <a href="https://www.ubereats.com/store/brew-memories/Kuq50fisWZK2CHf2uNb6RA?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
             target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/uber.png" alt=""></a>
           <a href="https://www.doordash.com/store/brew-memories-brooklyn-22949876/?pickup=true&utm_campaign=gpa"
@@ -76,7 +76,7 @@
         <img src="@/assets/img/about3.png" alt="">
       </div>
     </div>
-    <div id="MENU" class="flex flex-col justify-center items-center bg-[#4B3426] py-[100px] relative">
+    <div id="MENU" class="flex flex-col justify-center items-center bg-[#4B3426] py-[100px] relative tablet:pt-[156px]">
       <div class="flex flex-col justify-center items-center">
         <div class="font-[300] text-white tablet:text-14px">our delicious offer</div>
         <div class="text-[1.5rem] text-white tablet:text-center tablet:mx-[10%]">Unique food and charming spot in
@@ -109,10 +109,10 @@
       <div class="bg-white py-[12px] px-[24px] rounded-full cursor-pointer"
         @click="goUrl('https://www.brewmemoriesbk.com/?owg-fulfillment=pickup&location=11eb2bc2ec210b108648ac1f6bbbd01e&rwg_token=AJKvS9WDU7_3g7t7JDaxeVlPYROz4YtufvuVAYYGMiTvqA1drmZ-iyr9mNoCs4jK8j2DWTLpNn9k0US4aRc4OlWNnoDbuFssKQ%3D%3D#most-popular')">
         Order Online</div>
-      <img class="w-[450px] h-[320px] absolute top-[-25%] left-[20%] tablet:hidden" src="@/assets/img/menu.png" alt="">
-      <div class="desktop:hidden laptop:hidden mac:hidden absolute top-[-13%] left-0 flex">
-        <img src="@/assets/img/menuP1.png" alt="">
-        <img class="mb-[20%]" src="@/assets/img/menuP2.png" alt="">
+      <img class="w-[450px] h-[320px] absolute top-[-25%] left-[12%] tablet:hidden object-contain" src="@/assets/img/menu.png" alt="">
+      <div class="desktop:hidden laptop:hidden mac:hidden absolute top-[-6%] left-[5%] flex">
+        <img class="object-contain" src="@/assets/img/menuP1.png" alt="">
+        <img class="mb-[20%] object-contain" src="@/assets/img/menuP2.png" alt="">
       </div>
     </div>
     <!-- 六張圖區 -->
