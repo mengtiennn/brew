@@ -33,8 +33,8 @@ const emailContent = ref('')
         <span class="font-[500] text-[24px]">CONTACT</span>
         <div class="font-[300] text-[18px]">347-987-3954</div>
         <div class="mt-[24px] flex gap-[15px]">
-          <img src="@/assets/mobile-fb.svg" alt="fblogo" class="cursor-pointer">
-          <img src="@/assets/mobile-ig.svg" alt="iglogo" class="cursor-pointer">
+          <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank"><img src="@/assets/mobile-fb.svg" alt="fblogo" class="cursor-pointer"></a>
+          <a href="https://www.instagram.com/brew_memories" target="_blank"><img src="@/assets/mobile-ig.svg" alt="iglogo" class="cursor-pointer"></a>
         </div>
       </div>
     </div>

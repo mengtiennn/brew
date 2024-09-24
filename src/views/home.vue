@@ -3,19 +3,30 @@
     <div id="HOME" class="h-[710px] tablet:h-[516px] relative">
       <img class="w-full h-full object-cover" src="@/assets/img/banner.png" alt="">
       <div
-        class="w-full absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
-        <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH COFFEE.</div>
-        <div class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem]">Brew
-          Memories in Park Slope! </div>
-        <div class="flex flex-col tablet:text-center">
-          <div class="text-[1.5rem] font-[400] tablet:text-[14px]">Unforgettable Bubble Tea</div>
-          <div class="text-[1.5rem] font-[400] tablet:text-[14px]">and Coffee in Brooklyn.</div>
-        </div>
-        <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[5rem] bg-white my-[1.2rem]" />
+        class="w-fit absolute text-white left-[10%] top-[35%] flex flex-col gap-2 tablet:items-center tablet:left-0 tablet:top-[10%]">
+        <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[1.5rem]">COZY PLACE. FRESH
+          COFFEE.</div>
         <div
-          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max rounded-full cursor-pointer mt-[1rem] underline"
+          class="text-[2rem] font-[700] tablet:w-[80%] tablet:text-center tablet:text-[32px] tablet:mb-[1.5rem] w-fit">
+          Brew
+          Memories in Park Slope! </div>
+        <div class="flex flex-col tablet:text-center w-fit">
+          <div class="text-[1.5rem] font-[400] tablet:text-[14px] w-fit">Unforgettable Bubble Tea</div>
+          <div class="text-[1.5rem] font-[400] tablet:text-[14px] w-fit">and Coffee in Brooklyn.</div>
+        </div>
+        <div class="desktop:hidden mac:hidden laptop:hidden w-[1px] h-[67px] bg-white my-[1.2rem]" />
+        <div
+          class="bg-white px-[22px] py-[1rem] font-[500] text-black w-max rounded-full cursor-pointer mt-[1rem] underline mobile:py-[8px]"
           @click="goUrl()">
-          ORDER NOW
+          Order Pickup
+        </div>
+        <div class="flex gap-[4px]">
+          <a href="https://www.ubereats.com/store/brew-memories/Kuq50fisWZK2CHf2uNb6RA?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
+            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/uber.png" alt=""></a>
+          <a href="https://www.doordash.com/store/brew-memories-brooklyn-22949876/?pickup=true&utm_campaign=gpa"
+            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/doordash.png" alt=""></a>
+          <a href="https://www.grubhub.com/restaurant/brew-memories-295-7th-ave-brooklyn/2539246?utm_source=google&utm_medium=organic&utm_campaign=place-action-link&pickup=true&rwg_token=AJKvS9UoHvWurYpQUfLTpu0u3LZ-dKuilKeWyKUmkYU3wUYsXqRC6Re2Z2Xt9kWuhU60m_i6kT-lFKsqsnZUbkj64eGRxOsgBA%3D%3D"
+            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/grubhub.png" alt=""></a>
         </div>
       </div>
     </div>
@@ -95,7 +106,9 @@
           </div>
         </div>
       </div>
-      <div class="bg-white py-[12px] px-[24px] rounded-full cursor-pointer" @click="goUrl()">Order Online</div>
+      <div class="bg-white py-[12px] px-[24px] rounded-full cursor-pointer"
+        @click="goUrl('https://www.brewmemoriesbk.com/?owg-fulfillment=pickup&location=11eb2bc2ec210b108648ac1f6bbbd01e&rwg_token=AJKvS9WDU7_3g7t7JDaxeVlPYROz4YtufvuVAYYGMiTvqA1drmZ-iyr9mNoCs4jK8j2DWTLpNn9k0US4aRc4OlWNnoDbuFssKQ%3D%3D#most-popular')">
+        Order Online</div>
       <img class="w-[450px] h-[320px] absolute top-[-25%] left-[20%] tablet:hidden" src="@/assets/img/menu.png" alt="">
       <div class="desktop:hidden laptop:hidden mac:hidden absolute top-[-13%] left-0 flex">
         <img src="@/assets/img/menuP1.png" alt="">
@@ -139,7 +152,31 @@
     </div>
     <div id="CONTACT US">
       <!-- contact 桌電板 -->
-      <img id="CONTACT US" src="@/assets/img/c/contact.png" alt="contact" class="w-full object-contain laptop:hidden tablet:hidden">
+      <div class="laptop:hidden tablet:hidden relative" id="CONTACT US">
+        <img src="@/assets/img/bb.png" alt="contact" class="w-full object-contain">
+        <div class="absolute right-0 top-[50%]">
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[50px]">
+            <span class="text-[15px] text-white">347-987-3954</span>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
+            <span class="text-[15px] text-white">Online Order</span>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[50px]">
+            <span class="text-[15px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[50px]">
+            <span class="text-[15px] text-white">Brew Memories</span>
+          </div>
+          <div class="flex gap-[20px] items-center">
+            <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[50px]">
+            <span class="text-[15px] text-white">Brew_Memories</span>
+          </div>
+        </div>
+      </div>
       <!-- contact 手機版 -->
       <div class="relative desktop:hidden mac:hidden">
         <img src="@/assets/img/mo1.png" alt="contact" class="w-full object-contain">
@@ -147,7 +184,8 @@
       </div>
     </div>
   </div>
-  <div class="w-[53px] h-[53px] bg-[#D9D9D9] rounded-full fixed bottom-[24px] right-[20px] flex justify-center items-center">
+  <div
+    class="w-[53px] h-[53px] bg-[#D9D9D9] rounded-full fixed bottom-[24px] right-[20px] flex justify-center items-center">
     <img src="@/assets/icon/arrow.svg" alt="arrow" class="w-[40px] rotate-90" @click="goToTop()">
   </div>
 </template>
