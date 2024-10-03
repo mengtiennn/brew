@@ -1,8 +1,11 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  purge: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
+  purge: ["./index.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    fontFamily: {
+      sans: ["Ubuntu", "sans-serif"],
+    },
     extend: {
       colors: {
         "main-color": "#2eb6c7",
@@ -23,6 +26,9 @@ module.exports = {
       height: {
         "100vh-header": "calc(100vh - 80px)",
       },
+      fontFamily: {
+        ubuntu: ["Ubuntu", "sans-serif"],
+      },
     },
     screens: {
       tablet: { max: "949px" },
@@ -36,4 +42,4 @@ module.exports = {
     extend: {},
   },
   plugins: [],
-}
+};

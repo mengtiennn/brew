@@ -1,7 +1,7 @@
 <template>
   <div class="desktop:pt-[119px] tablet:pt-[95px]">
     <div id="HOME" class="h-[710px] tablet:h-[551px] relative">
-      <img class="w-full h-full object-contain desktop:!object-cover tablet:!object-cover" src="@/assets/img/banner.png" alt="">
+      <img class="w-full h-full object-cover mac:!object-contain tablet:!object-cover" src="@/assets/img/banner.png" alt="">
       <div
         class="w-fit absolute text-white left-[10%] top-[35%] flex flex-col tablet:items-center tablet:left-0 tablet:top-[20%] ">
         <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[0.5rem]">COZY PLACE. FRESH
@@ -125,29 +125,42 @@
     <div class="flex gap-[113px] justify-center pb-[203px] pt-[60px] laptop:hidden tablet:hidden">
       <div class="flex flex-col gap-[72px]">
         <img class="w-[424px]" src="@/assets/img/c/c1.png" alt="coffee info">
-        <span class="text-[32px] w-[466px]">Fresh coffee beans are used daily to provide a delicious cup of
-          coffee.</span>
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-[36px] font-[500]">Fresh Beans</div>
+          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">Fresh coffee beans are used daily to provide a delicious cup of
+            coffee.</span>
+        </div>
         <img class="w-[424px]" src="@/assets/img/c/c2.png" alt="coffee info">
       </div>
       <div class="flex flex-col gap-[72px] mt-[111px]">
-        <span class="text-[32px] w-[466px]">A professional barista crafts a delicious cup of coffee just for you.</span>
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-[36px] font-[500]">Professional Barista</div>
+          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">A professional barista crafts a delicious cup of coffee just for you.</span>
+        </div>
         <img class="w-[424px]" src="@/assets/img/c/c3.png" alt="coffee info">
-        <span class="text-[32px] w-[466px]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
+        <div class="flex flex-col justify-center items-center">
+          <div class="text-[36px] font-[500]">Boba Bliss</div>
+          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
+        </div>
       </div>
     </div>
     <!-- 介紹 手機板 -->
     <div
       class="flex flex-col gap-[46px] justify-center items-center px-[42px] pb-[174px] pt-[60px] desktop:hidden mac:hidden">
-      <span class="text-[24px] w-full text-center !font-[400]">A professional barista crafts a delicious cup of coffee
-        just for
-        you.</span>
+      <div class="text-[24px] w-full text-center !font-[500]">
+        <div>Professional Barista</div>
+        <div class="text-[15px] font-[400]">A professional barista crafts a delicious cup of coffee just for you.</div>
+      </div>
       <img class="w-full" src="@/assets/img/c/c1.png" alt="coffee info">
-      <span class="text-[24px] w-full text-center !font-[400]">Fresh coffee beans are used daily to provide a delicious
-        cup of
-        coffee.</span>
+      <div class="text-[24px] w-full text-center !font-[500]">
+        <div>Fresh Beans</div>
+        <div class="text-[15px] font-[400]">Fresh coffee beans are used daily to provide a delicious cup of coffee.</div>
+      </div>
       <img class="w-full" src="@/assets/img/c/c2.png" alt="coffee info">
-      <span class="text-[24px] w-full text-center !font-[400]">A refreshing cup of bubble tea is the perfect thirst
-        quencher.</span>
+      <div class="text-[24px] w-full text-center !font-[500]">
+        <div>Boba Bliss</div>
+        <div class="text-[15px] font-[400]">A refreshing cup of bubble tea is the perfect thirst quencher.</div>
+      </div>
       <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
     </div>
     <div id="CONTACT US">
@@ -159,7 +172,7 @@
             <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[50px]">
             <span class="text-[15px] text-white">347-987-3954</span>
           </div>
-          <a href="https://www.brewmemoriesonline.com/" target="_blank">
+          <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
             <div class="flex gap-[20px] items-center translate-x-[-80px]">
               <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
               <span class="text-[15px] text-white">Online Order</span>
@@ -196,7 +209,7 @@
             <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[37px]">
             <span class="text-[14px] text-white">347-987-3954</span>
           </div>
-          <a href="https://www.brewmemoriesonline.com/" target="_blank">
+          <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
             <div class="flex gap-[20px] items-center">
               <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[37px]">
               <span class="text-[14px] text-white">Online Order</span>

@@ -42,3 +42,17 @@
   font-family: "KaushanScript";
   src: url("./fonts/KaushanScript-Regular.ttf");
 }
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Bold.ttf");
+  font-weight: 700;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Light.ttf");
+  font-weight: 300;
+}
+@font-face {
+  font-family: "Ubuntu";
+  src: url("./fonts/Ubuntu-Regular.ttf");
+}
