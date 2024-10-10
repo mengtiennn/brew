@@ -1,7 +1,7 @@
 <template>
-  <div class="desktop:pt-[119px] tablet:pt-[95px]">
-    <div id="HOME" class="h-[710px] tablet:h-[551px] relative">
-      <img class="w-full h-full object-cover mac:!object-contain tablet:!object-cover" src="@/assets/img/banner.png" alt="">
+  <div class="pt-[82px] tablet:pt-[95px]">
+    <div id="HOME" class="h-[729px] tablet:h-[551px] relative">
+      <img class="w-full h-full object-cover" src="@/assets/img/banner.png" alt="">
       <div
         class="w-fit absolute text-white left-[10%] top-[35%] flex flex-col tablet:items-center tablet:left-0 tablet:top-[20%] ">
         <div class="text-[11px] font-[400] desktop:hidden mac:hidden laptop:hidden tablet:mb-[0.5rem]">COZY PLACE. FRESH
@@ -22,32 +22,32 @@
         </div>
         <div class="flex gap-[4px] mt-2">
           <a href="https://www.ubereats.com/store/brew-memories/Kuq50fisWZK2CHf2uNb6RA?diningMode=PICKUP&utm_campaign=place-action-link&utm_medium=organic&utm_source=google"
-            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/uber.png" alt=""></a>
+            target="_blank"><img class="mobile:w-[35px] w-[60px]" src="@/assets/img/uber.png" alt=""></a>
           <a href="https://www.doordash.com/store/brew-memories-brooklyn-22949876/?pickup=true&utm_campaign=gpa"
-            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/doordash.png" alt=""></a>
+            target="_blank"><img class="mobile:w-[35px] w-[60px]" src="@/assets/img/doordash.png" alt=""></a>
           <a href="https://www.grubhub.com/restaurant/brew-memories-295-7th-ave-brooklyn/2539246?utm_source=google&utm_medium=organic&utm_campaign=place-action-link&pickup=true&rwg_token=AJKvS9UoHvWurYpQUfLTpu0u3LZ-dKuilKeWyKUmkYU3wUYsXqRC6Re2Z2Xt9kWuhU60m_i6kT-lFKsqsnZUbkj64eGRxOsgBA%3D%3D"
-            target="_blank"><img class="mobile:w-[35px]" src="@/assets/img/grubhub.png" alt=""></a>
+            target="_blank"><img class="mobile:w-[35px] w-[60px]" src="@/assets/img/grubhub.png" alt=""></a>
         </div>
       </div>
     </div>
     <div id="ABOUT" class="px-[10%] flex pt-[139px] pb-[239px] justify-evenly tablet:pt-[72px]">
       <div class="w-[50%] flex flex-col items-center tablet:hidden">
         <div class="w-[405px]">
-          <div class="text-[2rem] font-[700] mb-[1rem]">WE ARE BREW<br> MEMORIES!</div>
-          <div class="font-[400] mb-[71px] w-[405px]">
+          <div class="text-[36px] font-[700] mb-[1rem]">WE ARE BREW<br> MEMORIES!</div>
+          <div class="font-[400] mb-[71px] w-[405px] text-[#636262] text-[15px]">
             Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a
             world of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s
             beloved borough.
           </div>
           <img class="w-[405px] h-[280px] mb-[75px]" src="@/assets/img/about1.png" alt="">
           <div class="text-[1.5rem] font-[700]">Freshly Made</div>
-          <div class="font-[400]">Fresh coffee, quality drinks, excellent meals!</div>
+          <div class="font-[400] text-[#636262] text-[15px]">Fresh coffee, quality drinks, excellent meals!</div>
         </div>
       </div>
       <div class="w-[50%] flex flex-col items-center tablet:hidden">
         <div class="w-[405px]">
           <img class="w-[405px] h-[280px]" src="@/assets/img/about2.png" alt="">
-          <div class="my-[84px] w-[405px]">
+          <div class="my-[84px] w-[405px] text-[#636262] text-[15px]">
             We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our
             coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and
             desserts, up hold the same standard of excellence!
@@ -57,13 +57,13 @@
       </div>
       <div class="desktop:hidden mac:hidden laptop:hidden flex flex-col justify-center items-center">
         <div class="text-[21px] font-[700] mb-[14px]">WE ARE BREW MEMORIES!</div>
-        <div class="text-[14px] font-[400] leading-[20px] mb-[2rem]">
+        <div class="text-[14px] font-[400] leading-[25px] mb-[2rem] text-[#636262] tracking-[2px]">
           Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world
           of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s beloved
           borough.
         </div>
         <img class="mb-[3.5rem]" src="@/assets/img/about2.png" alt="">
-        <div class="mb-[2.5rem]">
+        <div class="mb-[2.5rem] text-[#636262] text-[14px] font-[400] leading-[25px] tracking-[2px]">
           We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our
           coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and
           desserts, up hold the same standard of excellence!
@@ -71,7 +71,7 @@
         <img class="mb-[3.5rem]" src="@/assets/img/about1.png" alt="">
         <div class="flex flex-col justify-center items-center mb-[3rem]">
           <div class="text-[21px] font-[700]">Freshly Made</div>
-          <div class="text-center">Fresh coffee, quality drinks,<br> excellent meals!</div>
+          <div class="text-center text-[#636262] text-[14px] font-[400] leading-[25px] tracking-[2px]">Fresh coffee, quality drinks,<br> excellent meals!</div>
         </div>
         <img src="@/assets/img/about3.png" alt="">
       </div>
@@ -126,21 +126,21 @@
       <div class="flex flex-col gap-[72px]">
         <img class="w-[424px]" src="@/assets/img/c/c1.png" alt="coffee info">
         <div class="flex flex-col justify-center items-center">
-          <div class="text-[36px] font-[500]">Fresh Beans</div>
-          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">Fresh coffee beans are used daily to provide a delicious cup of
+          <div class="text-[24px] font-[500]">Fresh Beans</div>
+          <span class="text-[15px] font-[400] w-[251px] text-center text-[#757575]">Fresh coffee beans are used daily to provide a delicious cup of
             coffee.</span>
         </div>
         <img class="w-[424px]" src="@/assets/img/c/c2.png" alt="coffee info">
       </div>
       <div class="flex flex-col gap-[72px] mt-[111px]">
         <div class="flex flex-col justify-center items-center">
-          <div class="text-[36px] font-[500]">Professional Barista</div>
-          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">A professional barista crafts a delicious cup of coffee just for you.</span>
+          <div class="text-[24px] font-[500]">Professional Barista</div>
+          <span class="text-[15px] font-[400] w-[466px] text-center text-[#757575]">A professional barista crafts a delicious cup of coffee just for you.</span>
         </div>
         <img class="w-[424px]" src="@/assets/img/c/c3.png" alt="coffee info">
         <div class="flex flex-col justify-center items-center">
-          <div class="text-[36px] font-[500]">Boba Bliss</div>
-          <span class="text-[24px] font-[400] w-[466px] text-center text-[#757575]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
+          <div class="text-[24px] font-[500]">Boba Bliss</div>
+          <span class="text-[15px] font-[400] w-[251px] text-center text-[#757575]">A refreshing cup of bubble tea is the perfect thirst quencher.</span>
         </div>
       </div>
     </div>
@@ -156,44 +156,50 @@
         <div>Fresh Beans</div>
         <div class="text-[15px] font-[400]">Fresh coffee beans are used daily to provide a delicious cup of coffee.</div>
       </div>
-      <img class="w-full" src="@/assets/img/c/c2.png" alt="coffee info">
+      <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
       <div class="text-[24px] w-full text-center !font-[500]">
         <div>Boba Bliss</div>
         <div class="text-[15px] font-[400]">A refreshing cup of bubble tea is the perfect thirst quencher.</div>
       </div>
-      <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
+      <img class="w-full" src="@/assets/img/c/c2.png" alt="coffee info">
     </div>
     <div id="CONTACT US">
       <!-- contact 桌電板 -->
       <div class="laptop:hidden tablet:hidden relative" id="CONTACT US">
-        <img src="@/assets/img/bb.png" alt="contact" class="w-full object-contain">
-        <div class="absolute right-[256px] top-[50%] translate-y-[-50%] flex flex-col gap-[30px]">
-          <div class="flex gap-[20px] items-center translate-x-[-167px]">
-            <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[50px]">
-            <span class="text-[15px] text-white">347-987-3954</span>
+        <img src="@/assets/img/bb.png" alt="contact" class="w-full object-cover h-[705px]">
+        <div class="w-[50%] absolute left-[30%] top-[25%] flex items-center justify-between">
+          <div class="flex flex-col items-center leading-[1.7rem]">
+            <div class="text-[36px] font-[500] text-white">Visit us</div>
+            <div class="text-[24px] font-[300] text-white !font-caveat tracking-[3px]">in your town</div>
           </div>
-          <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
-            <div class="flex gap-[20px] items-center translate-x-[-80px]">
-              <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
-              <span class="text-[15px] text-white">Online Order</span>
-            </div>
-          </a>
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[50px]">
-            <span class="text-[15px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
-          </div>
-          <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
-            <div class="flex gap-[20px] items-center translate-x-[-80px]">
-              <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[50px]">
-              <span class="text-[15px] text-white">Brew Memories</span>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/brew_memories" target="_blank">
+          <div class="flex flex-col gap-[30px]">
             <div class="flex gap-[20px] items-center translate-x-[-167px]">
-              <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[50px]">
-              <span class="text-[15px] text-white">Brew_Memories</span>
+              <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[50px]">
+              <span class="text-[15px] text-white">347-987-3954</span>
             </div>
-          </a>
+            <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
+              <div class="flex gap-[20px] items-center translate-x-[-80px]">
+                <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[50px]">
+                <span class="text-[15px] text-white">Online Order</span>
+              </div>
+            </a>
+            <div class="flex gap-[20px] items-center">
+              <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[50px]">
+              <span class="text-[15px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
+              <div class="flex gap-[20px] items-center translate-x-[-80px]">
+                <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[50px]">
+                <span class="text-[15px] text-white">Brew Memories</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/brew_memories" target="_blank">
+              <div class="flex gap-[20px] items-center translate-x-[-167px]">
+                <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[50px]">
+                <span class="text-[15px] text-white">Brew_Memories</span>
+              </div>
+            </a>
+          </div>
         </div>
         <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px] right-[60px]">
       </div>
@@ -203,34 +209,40 @@
         <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px]">
       </div> -->
       <div class="relative desktop:hidden mac:hidden" id="CONTACT US">
-        <img src="@/assets/img/phone2.png" alt="contact" class="w-full object-contain">
-        <div class="flex flex-col gap-[30px] absolute bottom-[150px] left-[50%] translate-x-[-50%]">
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[37px]">
-            <span class="text-[14px] text-white">347-987-3954</span>
+        <img src="@/assets/img/phone2.png" alt="contact" class="w-full object-cover h-[720px]">
+        <div class="absolute inset-0 flex flex-col items-center justify-center gap-[5rem]">
+          <div class="flex flex-col items-center leading-[2rem]">
+            <div class="text-[36px] font-[500] text-white">Visit us</div>
+            <div class="text-[24px] font-[300] text-white !font-caveat tracking-[3px]">in your town</div>
           </div>
-          <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
+          <div class="flex flex-col gap-[30px]">
             <div class="flex gap-[20px] items-center">
-              <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[37px]">
-              <span class="text-[14px] text-white">Online Order</span>
+              <img src="@/assets/img/phone.png" alt="contact" class="object-contain w-[37px]">
+              <span class="text-[14px] text-white">347-987-3954</span>
             </div>
-          </a>
-          <div class="flex gap-[20px] items-center">
-            <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[37px]">
-            <span class="text-[14px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
+            <a href="https://www.brewmemoriesbk.com/#most-popular" target="_blank">
+              <div class="flex gap-[20px] items-center">
+                <img src="@/assets/img/online-order.png" alt="contact" class="object-contain w-[37px]">
+                <span class="text-[14px] text-white">Online Order</span>
+              </div>
+            </a>
+            <div class="flex gap-[20px] items-center">
+              <img src="@/assets/img/location.png" alt="contact" class="object-contain w-[37px]">
+              <span class="text-[14px] text-white">295 7th Ave, Brooklyn,<br />NY 11215</span>
+            </div>
+            <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
+              <div class="flex gap-[20px] items-center">
+                <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[37px]">
+                <span class="text-[14px] text-white">Brew Memories</span>
+              </div>
+            </a>
+            <a href="https://www.instagram.com/brew_memories" target="_blank">
+              <div class="flex gap-[20px] items-center">
+                <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[37px]">
+                <span class="text-[14px] text-white">Brew_Memories</span>
+              </div>
+            </a>
           </div>
-          <a href="https://www.facebook.com/profile.php?id=61565750253296" target="_blank">
-            <div class="flex gap-[20px] items-center">
-              <img src="@/assets/img/facebook.png" alt="contact" class="object-contain w-[37px]">
-              <span class="text-[14px] text-white">Brew Memories</span>
-            </div>
-          </a>
-          <a href="https://www.instagram.com/brew_memories" target="_blank">
-            <div class="flex gap-[20px] items-center">
-              <img src="@/assets/img/instagram.png" alt="contact" class="object-contain w-[37px]">
-              <span class="text-[14px] text-white">Brew_Memories</span>
-            </div>
-          </a>
         </div>
         <img src="@/assets/img/mo2.png" alt="contact" class="object-contain absolute bottom-[-90px] right-[60px]">
       </div>

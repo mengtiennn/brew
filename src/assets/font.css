@@ -56,3 +56,7 @@
   font-family: "Ubuntu";
   src: url("./fonts/Ubuntu-Regular.ttf");
 }
+@font-face {
+  font-family: "Caveat";
+  src: url("./fonts/Caveat-Regular.ttf");
+}

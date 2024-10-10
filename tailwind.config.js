@@ -28,6 +28,7 @@ module.exports = {
       },
       fontFamily: {
         ubuntu: ["Ubuntu", "sans-serif"],
+        caveat: ["Caveat", "cursive"],
       },
     },
     screens: {
@@ -36,6 +37,7 @@ module.exports = {
       mac: { min: "1131px", max: "1440px" },
       desktop: { min: "1441px" },
       mobile: { max: "800px" },
+      smallDesktop: { min: "950px", max: "1275px" },
     },
   },
   variants: {
