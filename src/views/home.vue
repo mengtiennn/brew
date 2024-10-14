@@ -57,13 +57,13 @@
       </div>
       <div class="desktop:hidden mac:hidden laptop:hidden flex flex-col justify-center items-center">
         <div class="text-[21px] font-[700] mb-[14px]">WE ARE BREW MEMORIES!</div>
-        <div class="text-[14px] font-[400] leading-[25px] mb-[2rem] text-[#636262] tracking-[2px]">
+        <div class="text-[14px] font-[400] leading-[25px] mb-[2rem] text-[#636262] tracking-[2px] text-center">
           Welcome to Brooklyn’s best café in Park Slope, where passion meets perfection in every cup. Dive into a world
           of aromatic brews, handcrafted from globally sourced beans, and expertly roasted here in New York’s beloved
           borough.
         </div>
         <img class="mb-[3.5rem]" src="@/assets/img/about2.png" alt="">
-        <div class="mb-[2.5rem] text-[#636262] text-[14px] font-[400] leading-[25px] tracking-[2px]">
+        <div class="mb-[2.5rem] text-[#636262] text-[14px] font-[400] leading-[25px] tracking-[2px] text-center">
           We roast our coffee locally in small batches to ensure you get the freshest beans around. Not only is our
           coffee roasted to perfection, but all our drinks, including the finest bubble tea, as well as our meals and
           desserts, up hold the same standard of excellence!
@@ -132,7 +132,7 @@
         </div>
         <img class="w-[424px]" src="@/assets/img/c/c2.png" alt="coffee info">
       </div>
-      <div class="flex flex-col gap-[72px] mt-[111px]">
+      <div class="flex flex-col items-center justify-evenly gap-[72px]">
         <div class="flex flex-col justify-center items-center">
           <div class="text-[24px] font-[500]">Professional Barista</div>
           <span class="text-[15px] font-[400] w-[466px] text-center text-[#757575]">A professional barista crafts a delicious cup of coffee just for you.</span>
@@ -148,18 +148,18 @@
     <div
       class="flex flex-col gap-[46px] justify-center items-center px-[42px] pb-[174px] pt-[60px] desktop:hidden mac:hidden">
       <div class="text-[24px] w-full text-center !font-[500]">
-        <div>Professional Barista</div>
-        <div class="text-[15px] font-[400]">A professional barista crafts a delicious cup of coffee just for you.</div>
+        <div class="mb-[10px]">Professional Barista</div>
+        <div class="text-[15px] font-[400] text-[#757575]">A professional barista crafts a delicious cup of coffee just for you.</div>
       </div>
       <img class="w-full" src="@/assets/img/c/c1.png" alt="coffee info">
       <div class="text-[24px] w-full text-center !font-[500]">
-        <div>Fresh Beans</div>
-        <div class="text-[15px] font-[400]">Fresh coffee beans are used daily to provide a delicious cup of coffee.</div>
+        <div class="mb-[10px]">Fresh Beans</div>
+        <div class="text-[15px] font-[400] text-[#757575]">Fresh coffee beans are used daily to provide a delicious cup of coffee.</div>
       </div>
       <img class="w-full" src="@/assets/img/c/c3.png" alt="coffee info">
       <div class="text-[24px] w-full text-center !font-[500]">
-        <div>Boba Bliss</div>
-        <div class="text-[15px] font-[400]">A refreshing cup of bubble tea is the perfect thirst quencher.</div>
+        <div class="mb-[10px]">Boba Bliss</div>
+        <div class="text-[15px] font-[400] text-[#757575]">A refreshing cup of bubble tea is the perfect thirst quencher.</div>
       </div>
       <img class="w-full" src="@/assets/img/c/c2.png" alt="coffee info">
     </div>

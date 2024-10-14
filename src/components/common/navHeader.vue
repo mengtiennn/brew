@@ -41,7 +41,7 @@ const goUrl = (url?: string) => {
           <div v-for="(link, idx) in optionList" :key="idx" @click="scrollTo(link)" class="cursor-pointer">{{ link }}</div>
         </div>
       </div>
-      <div class="tablet:hidden laptop:hidden text-white bg-[#4B3426] font-[500] px-[18px] py-[12px] rounded-full cursor-pointer" @click="goUrl()">Oder Pickup</div>
+      <div class="tablet:hidden laptop:hidden text-white bg-[#4B3426] font-[500] px-[18px] py-[12px] rounded-full cursor-pointer" @click="goUrl()">Order Pickup</div>
     </div>
     <!-- <img src="@/assets/img/menu.svg" class="absolute top-[16px] right-4 cursor-pointer desktop:hidden mac:hidden tablet:hidden" @click="showHamburger = true"> -->
     <img src="@/assets/img/menuWhite.svg" class="absolute top-[32px] right-4 cursor-pointer desktop:hidden mac:hidden" @click="showHamburger = true">
