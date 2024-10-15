@@ -169,8 +169,8 @@
         <img src="@/assets/img/bb.png" alt="contact" class="w-full object-cover h-[705px]">
         <div class="w-[50%] absolute left-[30%] top-[25%] flex items-center justify-between">
           <div class="flex flex-col items-center leading-[1.7rem]">
-            <div class="text-[36px] font-[500] text-white">Visit us</div>
-            <div class="text-[24px] font-[300] text-white !font-caveat tracking-[3px]">in your town</div>
+            <div class="text-[40px] font-[500] text-white">Visit us</div>
+            <div class="text-[40px] font-[300] text-white !font-caveat tracking-[3px]">in your town</div>
           </div>
           <div class="flex flex-col gap-[30px]">
             <div class="flex gap-[20px] items-center translate-x-[-167px]">
